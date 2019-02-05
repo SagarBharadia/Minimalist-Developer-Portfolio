@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--
+    Template Name: Minimalist Developer Portfolio
+    Author: Sagar Bharadia https://github.com/sagarbharadia
+    Notes: 
+        This template is free to use for all and can be changed to suite your needs. If you decide to use this template you are allowed to remove the 'Made By Sagar' tag in the footer. However I'd greatly appreciate if you did keep the tag in the footer to help me out! Developer to developer thank you <3
+        The fontawesome tag is required by fontawesome for credits.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minimalist Developer / Graphics Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1><span class="feature-txt">LOREM I</span>PSUM</h1>
+            <div id="menu-icon">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+        </header>
+        <!-- Hero -->
+        <section class="flex-row-center" id="hero">
+            <div class="col-md-6 flex-row-center">
+                <img src="http://via.placeholder.com/500" alt="Placeholder picture of you" id="picture-of-you">
+            </div>
+            <div class="col-md-6">
+                <h1 class="title">Lorem ipsum dolor sit amet.</h2>
+                <p>Maecenas ultrices metus sit amet purus congue, nec efficitur odio imperdiet. Mauris vitae congue massa. Sed sit amet efficitur quam, ut aliquet metus. Nullam elementum erat nec velit lobortis vehicula.</p>
+                <div id="social-icons" class="flex-row-start">
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://dribble.com/" target="_blank"><i class="fab fa-dribbble fa-2x"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                    <a href="mailto:sagarbharadia@hotmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+                </div>
+            </div>
+        </section> <!-- ./Hero -->
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <ul class="flex-row-start" id="portfolio-categories">
+                <li class="portfolio-item-search-link" data-searchType="development" onclick="filterPortfolioItems(this)">Development</li>
+                <li class="portfolio-item-search-link" data-searchType="design" onclick="filterPortfolioItems(this)">Design</li>
+                <li class="portfolio-item-search-link" data-searchType="graphics" onclick="filterPortfolioItems(this)">Graphic Design</li>
+                <li class="portfolio-item-search-link" data-searchType="leaflets" onclick="filterPortfolioItems(this)">Leaflets</li>
+            </ul>
+            <div id="portfolio-items">
+                <div data-tags="development design" class="portfolio-item c2">
+                    <h1>Web Portfolio Item</h1>
+                    <p>Suspendisse suscipit lorem vel quam scelerisque, eleifend aliquam quam egestas. Donec dignissim mattis enim eu sodales. Vestibulum a felis nec enim ullamcorper tincidunt ac ac lorem. Nunc aliquam erat et accumsan dignissim. </p>
+                </div>
+                <div data-tags="leaflets design" class="portfolio-item">
+                    <h1>Leaflets Portfolio Item</h1>
+                    <p>Suspendisse suscipit lorem vel quam scelerisque, eleifend aliquam quam egestas. Donec dignissim mattis enim eu sodales. Vestibulum a felis nec enim ullamcorper tincidunt ac ac lorem. Nunc aliquam erat et accumsan dignissim. </p>
+                </div>
+                <div data-tags="graphics leaflets" class="portfolio-item r2">
+                    <h1>Leaflets Portfolio Item</h1>
+                    <p>Suspendisse suscipit lorem vel quam scelerisque, eleifend aliquam quam egestas. Donec dignissim mattis enim eu sodales. Vestibulum a felis nec enim ullamcorper tincidunt ac ac lorem. Nunc aliquam erat et accumsan dignissim. </p>
+                </div>
+                <div data-tags="business-cards design graphics" class="portfolio-item">
+                    <h1>Business Card Portfolio Item</h1>
+                    <p>Suspendisse suscipit lorem vel quam scelerisque, eleifend aliquam quam egestas. Donec dignissim mattis enim eu sodales. Vestibulum a felis nec enim ullamcorper tincidunt ac ac lorem. Nunc aliquam erat et accumsan dignissim. </p>
+                </div>
+                <div data-tags="graphics design" class="portfolio-item r2">
+                    <h1>Logo Portfolio Item</h1>
+                    <p>Suspendisse suscipit lorem vel quam scelerisque, eleifend aliquam quam egestas. Donec dignissim mattis enim eu sodales. Vestibulum a felis nec enim ullamcorper tincidunt ac ac lorem. Nunc aliquam erat et accumsan dignissim. </p>
+                </div>
+                <div data-tags="business-cards design graphics" class="portfolio-item c2">
+                    <h1>Business Card Portfolio Item</h1>
+                    <p>Suspendisse suscipit lorem vel quam scelerisque, eleifend aliquam quam egestas. Donec dignissim mattis enim eu sodales. Vestibulum a felis nec enim ullamcorper tincidunt ac ac lorem. Nunc aliquam erat et accumsan dignissim. </p>
+                </div>
+                <div data-tags="graphics design" class="portfolio-item">
+                    <h1>UI Design Portfolio Item</h1>
+                    <p>Suspendisse suscipit lorem vel quam scelerisque, eleifend aliquam quam egestas. Donec dignissim mattis enim eu sodales. Vestibulum a felis nec enim ullamcorper tincidunt ac ac lorem. Nunc aliquam erat et accumsan dignissim. </p>
+                </div>
+                <div data-tags="graphics design development" class="portfolio-item">
+                    <h1>Website Portfolio Item</h1>
+                    <p>Suspendisse suscipit lorem vel quam scelerisque, eleifend aliquam quam egestas. Donec dignissim mattis enim eu sodales. Vestibulum a felis nec enim ullamcorper tincidunt ac ac lorem. Nunc aliquam erat et accumsan dignissim. </p>
+                </div>
+            </div>
+        </section><!-- ./Portfolio -->
+    </div>
+    <!-- where-ive-been -->
+    <section id="where-ive-been">
+        <div class="wrapper">
+            <div class="section-center-title">
+                <h1 class="text-left">Like <i>what</i> i've done?</h1>
+                <h1 class="text-right">Here's <i>where</i> i've been.</h1>
+            </div>
+            <div class="wib-item float-left">
+                <div class="vertical-line"></div>
+                <hr class="mright">
+                <img class="wib-image" src="http://via.placeholder.com/320" alt="placeholder image">
+                <div class="wib-content">
+                    <h1>let College = <span class="duration">2015 - 2017</span></h1>
+                    <p>In tincidunt imperdiet dui, vitae condimentum nibh facilisis eget. Donec pellentesque venenatis justo vel ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nibh tellus, blandit vitae nisi nec, pulvinar pellentesque nibh.</p>
+                </div>
+            </div>
+            <div class="wib-item float-right">
+                <div class="wib-content">
+                    <h1>let ApplicationDeveloper = <span class="duration">Jan 2017 - May 2017</span></h1>
+                    <p>In tincidunt imperdiet dui, vitae condimentum nibh facilisis eget. Donec pellentesque venenatis justo vel ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nibh tellus, blandit vitae nisi nec, pulvinar pellentesque nibh.</p>
+                </div>
+                <img class="wib-image" src="http://via.placeholder.com/320" alt="placeholder image">
+                <hr class="mleft">
+                <div class="vertical-line"></div>
+            </div>
+            <div class="wib-item float-left">
+                <div class="vertical-line"></div>
+                <hr class="mright">
+                <img class="wib-image" src="http://via.placeholder.com/320" alt="placeholder image">
+                <div class="wib-content">
+                    <h1>var University = <span class="duration">2017 - Present</span></h1>
+                    <p>In tincidunt imperdiet dui, vitae condimentum nibh facilisis eget. Donec pellentesque venenatis justo vel ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nibh tellus, blandit vitae nisi nec, pulvinar pellentesque nibh.</p>
+                </div>
+            </div>
+            <div class="wib-item float-right">
+                <div class="wib-content">
+                    <h1>var WebDeveloper = <span class="duration">May 2018 - Present</span></h1>
+                    <p>In tincidunt imperdiet dui, vitae condimentum nibh facilisis eget. Donec pellentesque venenatis justo vel ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nibh tellus, blandit vitae nisi nec, pulvinar pellentesque nibh.</p>
+                </div>
+                <img class="wib-image" src="http://via.placeholder.com/320" alt="placeholder image">
+                <hr class="mleft">
+                <div class="vertical-line"></div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </section><!-- ./where-ive-been -->
+    <!-- who-have-i-worked-with -->
+    <section id="who-have-i-worked-with">
+        <div class="wrapper">
+            <div class="section-center-title">
+                <h1 class="text-left"><i>Who</i> have I worked with?</h1>
+            </div>
+            <div class="whiww-item float-left">
+                <div class="vertical-line"></div>
+                <img class="whiww-image" src="http://via.placeholder.com/320" alt="placeholder image">
+                <div class="whiww-content">
+                    <h1>Miss Alisha Higgins - <span class="role">Director Of Lorem Ipsum</span></h1>
+                    <p>In tincidunt imperdiet dui, vitae condimentum nibh facilisis eget. Donec pellentesque venenatis justo vel ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nibh tellus, blandit vitae nisi nec, pulvinar pellentesque nibh.</p>
+                </div>
+            </div>
+            <div class="whiww-item float-right">
+                <div class="whiww-content">
+                    <h1>Mr Jamie Gardner - <span class="role">Developer at Malibu Cakes</span></h1>
+                    <p>In tincidunt imperdiet dui, vitae condimentum nibh facilisis eget. Donec pellentesque venenatis justo vel ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nibh tellus, blandit vitae nisi nec, pulvinar pellentesque nibh.</p>
+                </div>
+                <img class="whiww-image" src="http://via.placeholder.com/320" alt="placeholder image">
+                <div class="vertical-line"></div>
+            </div>
+            <div class="whiww-item float-left">
+                <div class="vertical-line"></div>
+                <img class="whiww-image" src="http://via.placeholder.com/320" alt="placeholder image">
+                <div class="whiww-content">
+                    <h1>Mrs Lola Burns - <span class="role">Director of Marketing at Heatings Ltd</span></h1>
+                    <p>In tincidunt imperdiet dui, vitae condimentum nibh facilisis eget. Donec pellentesque venenatis justo vel ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nibh tellus, blandit vitae nisi nec, pulvinar pellentesque nibh.</p>
+                </div>
+            </div>
+            <div class="whiww-item float-right">
+                <div class="whiww-content">
+                    <h1>Mr William Lamberts - <span class="role">Teacher at Lemings Technology School</span></h1>
+                    <p>In tincidunt imperdiet dui, vitae condimentum nibh facilisis eget. Donec pellentesque venenatis justo vel ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nibh tellus, blandit vitae nisi nec, pulvinar pellentesque nibh.</p>
+                </div>
+                <img class="whiww-image" src="http://via.placeholder.com/320" alt="placeholder image">
+                <div class="vertical-line"></div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </section><!-- ./who-have-i-worked-with -->
+    <!-- lets-have-a-chat -->
+    <section id="lets-have-a-chat">
+        <div class="wrapper">
+            <div class="section-center-title">
+                <h1 class="text-left">Like what you see?</h1>
+                <h1 class="text-right"><i>Let's have a chat</i></h1>
+            </div>
+            <img id="contact-form-img" src="/imgs/undraw_programmer_imem.svg" alt="UnDraw Programmer Image">
+            <form id="contact-form" class="col-md-8">
+                <p id="name-label">Your Name *</p>
+                <input type="text" name="name" onfocus="showLabel(this);" onblur="hideLabel(this);" placeholder="Your Name *" required>
+                <p id="email-label">Your Email</p>
+                <input type="email" name="email" onfocus="showLabel(this);" onblur="hideLabel(this);" placeholder="Your Email *" required>                    
+                <p id="phoneno-label">Your Phone Number</p>
+                <input type="tel" name="phoneno" onfocus="showLabel(this);" onblur="hideLabel(this);" placeholder="Your Phone Number *" required>
+                <p id="msg-label">Your Message</p>
+                <textarea name="msg" onfocus="showLabel(this);" onblur="hideLabel(this);" placeholder="Your Message *" required style="max-width: 100%; height: 10em;"></textarea>
+                <button type="submit">Let's meet for coffee</button>
+            </form>
+            <div style="clear: both;"></div>
+        </div>
+    </section><!-- ./lets-have-a-chat -->
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Lorem Ipsum | Uses Icons from <a href="https://fontawesome.com" href="_blank">Font Awesome</a> | Uses SVGs from <a href="https://undraw.co/illustrations" target="_blank">UnDraw</a> | <a href="http://sagarbharadia.com" target="_blank">Made By Sagar</a></p>
+    </footer><!-- ./Footer -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
